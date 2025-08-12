@@ -1,0 +1,46 @@
+.footer {
+  width: 100%;
+  padding: 1.5rem 0;
+  margin-top: auto; /* Для прижатия к низу */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.text {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0;
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 500;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.copyright {
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem 0;
+  }
+  
+  .text {
+    font-size: 0.8rem;
+  }
+}
